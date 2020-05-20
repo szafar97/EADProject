@@ -1,0 +1,51 @@
+@{
+    ViewBag.Title = "Books Catalogue";
+}
+
+@Html.Partial("_Header");
+
+<h1>Books Catalogue</h1>
+
+<table align="center" border="5">
+    <tr>
+        <th style="padding:2px 5px;">
+            <b>Title</b>
+        </th>
+        <th style="padding:2px 5px;">
+            <b>Description</b>
+        </th>
+        <th style="padding:2px 5px;">
+            <b>Author</b>
+        </th>
+        <th style="padding:2px 5px;">
+            <b>Category</b>
+        </th>
+        <th colspan="2" style="padding:2px 5px;">
+            <b>Action</b>
+        </th>
+    </tr>
+
+    @foreach (var item in ViewBag.result)
+    {
+        <tr style="text-align:center;">
+            <td style="padding:2px 5px;">@item.Title</td>
+            <td style="padding:2px 5px;">@item.Description</td>
+            <td style="padding:2px 5px;"><i>@item.Author</i></td>
+            <td style="padding:2px 5px;">@item.Category</td>
+            <td>
+                <form action="/Home/EditBook" method="POST">
+                    <input type="number" name="book_ID" value="@item.Id" hidden>
+                    <button onclick="submit" style="color: green; width: 100%;">Edit</button>
+                </form>
+            </td>
+            <td>
+                <form action="/Home/DeleteBook" method="POST">
+                    <input type="number" name="book_ID" value="@item.Id" hidden>
+                    <button onclick="submit" style="color: red; width: 100%;" style="border-radius:3px;">Remove</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+
+@Html.Partial("_Footer")
