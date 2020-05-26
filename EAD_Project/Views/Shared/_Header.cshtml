@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @{
+        if (ViewBag.Title.Equals("Homepage"))
+        {
+            <link href="~/Scripts/assets/home/home.css" rel="stylesheet">
+        }
+        else
+        {
+            <link href="~/Scripts/assets/books/books.css" rel="stylesheet">
+            <script src="~/Scripts/assets/books/books.js"></script>
+        }
+}
+    <link href="~/Scripts/assets/home/home1.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="air">
+        <table align="center">
+            <tr>
+                <th style="padding:5% 30px;"><a href="~/Home/Index/" style="color:red">Homepage</a></th>
+                <th style="padding:5% 30px;"><a href="~/Home/Books/" style="color:red">Books</a></th>
+                <th style="padding:5% 30px;"><a href="~/Home/AddBook/" style="color:red">Add New Book</a></th>
+            </tr>
+        </table>
+    </div>
+
+
