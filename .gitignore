@@ -1,2 +1,3 @@
-# Ignore CSS files
-*.css
+# Ignore CSS and HTML files
+*.css linguist-detectable=false
+*.html linguist-detectable=false
