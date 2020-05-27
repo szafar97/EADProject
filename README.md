@@ -2,15 +2,13 @@
 ## Books Inventory System
 A simple project in ASP.NET MVC.
 
-Project Name: **Books Inventory System**
-
 ## Table of Contents
 1. Description of the Web Application
 2. Minimum Software Requirements
 3. Minimum Hardware Requirements
 4. How to Run the Application
 
-### Description of the Web Application
+## Description of the Web Application
 It is a simple book inventory system. All features are listed below:
 * Index Page - It shows drop-down list of different categories of books, select any and press the "View Books" button to be forwarded to Books Catalogue View.
   * The category list is fetched from the database based on the currently existing books in the database.
@@ -29,21 +27,21 @@ It is a simple book inventory system. All features are listed below:
   
 * Delete Book - It doesn't have any view, if you click the *Delete* button on the "View Books" page, that specific book will be removed instantly from the database/inventory and the page will be refreshed to show the remaining books.
 
-### Minimum Software Requirements to run the application
+## Minimum Software Requirements to run the application
 * Microsoft Windows 8.1 or higher.
 * [Microsoft Visual Studio 2013](www.visualstudio.com/en-us/products/visual-studio-community-vs) or higher
 * .NET Framework 4.5 or higher
 * Internet Information Services (IIS Express or IIS) (It comes with Visual Studio 2010 or higher)
 * A Web Browser (Firefox, Chrome, Opera, Microsoft Edge, etc)
 
-### Minimum Hardware Requirements to run the application
+## Minimum Hardware Requirements to run the application
 * 1.6 GHz or faster processor.
 * 1 GB of RAM.
 * 20 GB of free hard disk space (for Visual Studio 2013, if not already installed)
 * 5400 RPM hard disk drive.
 * DirectX 9-Capable Video card with 1024x768 of minimum resolution.
 
-### How to Run the Application
+## How to Run the Application
 1. Download/Clone the project from [here](https://github.com/szafar97/EADProject).
 2. Run the *EAD_Project.sln* file in Visual Studio 2013 (or higher).
 3. Click the browser name in toolbar (or press F5) to run the web application.
